@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="Fragment.NotificationFragment">
+    <!-- Screen Title -->
+    <TextView
+        android:id="@+id/screenTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Thông Báo"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Notification for LED -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/notificationTitleLED"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Device Name: LED Phòng Khách"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/notificationBodyLED"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: LED - On"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/notificationTimestampLED"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Timestamp: 2024-12-13 14:55:00"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <!-- Notification for DHT -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/notificationTitleDHT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Device Name: DHT Phòng Ngủ"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/notificationBodyDHT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: Temp: 25°C, Humidity: 60%"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/notificationTimestampDHT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Timestamp: 2024-12-13 14:55:00"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <!-- Notification for Gas Sensor -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/notificationTitleGas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Device Name: Gas Sensor Phòng Ăn"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/notificationBodyGas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: Gas Level - Normal"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/notificationTimestampGas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Timestamp: 2024-12-13 14:54:01"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+</LinearLayout>
